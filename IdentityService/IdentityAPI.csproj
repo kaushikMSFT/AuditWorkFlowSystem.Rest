@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-IdentityService-BD5FE598-A54C-4EB4-BE9B-2D7FC6F5F7E4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+
+    
+      <PackageReference Include="MassTransit" Version="7.0.2" />
+      <PackageReference Include="MassTransit.AspNetCore" Version="7.0.2" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.2" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\TestRabbitMQ\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels">
+      <HintPath>..\TestRabbitMQ\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
